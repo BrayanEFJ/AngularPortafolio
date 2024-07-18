@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Primera landing page hecha con angular</title>
   <link rel="stylesheet" href="../styles.css">
+  
 </head>
 
 <body class="bg-black h-full">
-<section class="bg-black h-screen relative w-full"
+<section class="bg-black h-screen relative w-screen cursor-pointer"
     style="background-image: url('../assets/Images/pexels-adrien-olichon-1257089-2387793.jpg'); background-size: cover; background-repeat: no-repeat;">
     <div class="navbar text-white xl:mr-32 w-full fixed top-0 left-0 z-10">
       <div class="flex-1">
@@ -40,35 +41,35 @@
         </div>
       </div>
     </div>
-    <div class="flex items-center h-full">
-      <div class="container">
-          <!-- Left Column: Text Content -->
-          <div class="flex flex-col items-center md:items-start text-center md:text-left max-w-[550px] max-lg:mx-
-          4">
-            <div class="text-[60px] font-bold leading-none">
-              <span class="text-[#FF0000]">Hello</span>
-              <span class="text-white">, I'm</span>
-            </div>
-            <div class="text-[60px] font-bold text-white leading-none">
-              Brayan Figueroa
-            </div>
-            <div class="text-white text-lg mt-5">
-              web developer and national competitor worldskills colombia
-            </div>
-            <button class="btn bg-red-600 text-white font-bold w-10/12 rounded mt-4 hover:bg-red-700">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
-              Contact me
-            </button>
+       <div class="flex items-center justify-center h-full w-full">
+      <div class="container flex flex-col md:flex-row items-center justify-center">
+        <!-- Left Column: Text -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left max-w-[550px] max-lg:mx-4 md:mr-10">
+          <div class="text-[60px] font-bold leading-none">
+            <span class="text-[#FF0000]">Hello</span>
+            <span class="text-white">, I'm</span>
           </div>
-          <!-- Right Column: Image -->
-          <!-- <div class="flex-none">
-            <img src="../assets/Images/WhatsApp_Image_2024-06-21_at_9.25.28_AM-removebg-preview(1)(1).png" alt="Brayan Figueroa" class="w-[200px] h-[200px] md:w-[600px] md:h-[600px] rounded-full object-cover">
-          </div> -->
+          <div class="text-[60px] font-bold text-white leading-none">
+            Brayan Figueroa
+          </div>
+          <div class="text-white text-lg mt-5">
+            web developer and national competitor worldskills colombia
+          </div>
+          <button class="btn bg-red-600 text-white font-bold w-10/12 rounded mt-4 hover:bg-red-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+            Contact me
+          </button>
         </div>
+        <!-- Right Column: Image -->
+        <div class="flex-none">
+          <img src="../assets/Images/perfil.png" alt="Brayan Figueroa" class="w-[200px] h-[200px] md:w-[400px] md:h-[400px] rounded-full object-cover">
+
+        </div>
+      </div>
     </div>
   </section>
 
