@@ -6,18 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Primera landing page hecha con angular</title>
   <link rel="stylesheet" href="../styles.css">
-  
+
 </head>
 
-<body class="bg-black h-full">
-<section class="bg-black h-screen relative w-screen cursor-pointer"
-    style="background-image: url('../assets/Images/pexels-adrien-olichon-1257089-2387793.jpg'); background-size: cover; background-repeat: no-repeat;">
+<body class="bg-black h-full cursor-pointer">
+  <section class="bg-black h-screen ">
     <div class="navbar text-white xl:mr-32 w-full fixed top-0 left-0 z-10">
       <div class="flex-1">
         <a class="text-xl mx-10">BEFJ</a>
       </div>
       <div>
-        <ul class="menu menu-horizontal px-1 hidden sm:flex">
+        <ul class="menu menu-horizontal  hidden sm:flex ">
           <li><a>Home</a></li>
           <li><a>About me</a></li>
           <li><a>Skills</a></li>
@@ -41,10 +40,17 @@
         </div>
       </div>
     </div>
-       <div class="flex items-center justify-center h-full w-full">
+    <div class="">
+      <div class="line github"></div>
+      <div class="line linkedin"></div>
+      <div class="ball"></div>
+    </div>
+
+    <div class="flex items-center bg-black h-full w-full">
       <div class="container flex flex-col md:flex-row items-center justify-center">
         <!-- Left Column: Text -->
-        <div class="flex flex-col items-center md:items-start text-center md:text-left max-w-[550px] max-lg:mx-4 md:mr-10">
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left max-w-[550px] max-lg:mx-4 md:mr-10">
           <div class="text-[60px] font-bold leading-none">
             <span class="text-[#FF0000]">Hello</span>
             <span class="text-white">, I'm</span>
@@ -52,59 +58,125 @@
           <div class="text-[60px] font-bold text-white leading-none">
             Brayan Figueroa
           </div>
-          <div class="text-white text-lg mt-5">
+          <div class="text-white text-lg mt-5 w-8/12">
             web developer and national competitor worldskills colombia
           </div>
-          <button class="btn bg-red-600 text-white font-bold w-10/12 rounded mt-4 hover:bg-red-700">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" fill="none" viewBox="0 0 24 24"
+
+          <button class="btn bg-red-600 text-white font-bold w-7/12 rounded-3xl mt-4 hover:bg-red-700 border-0">
+            Contact me
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-            </svg>
-            Contact me
+            </svg> -->
           </button>
+          <div class="mt-5 flex flex-row space-x-5">
+            <button>
+              <lucide-icon name="github" [size]="30" color="white"></lucide-icon>
+            </button>
+            <button>
+              <lucide-icon name="linkedin" [size]="30" color="white"></lucide-icon>
+            </button>
+          </div>
         </div>
-        <!-- Right Column: Image -->
-        <div class="flex-none">
-          <img src="../assets/Images/perfil.png" alt="Brayan Figueroa" class="w-[200px] h-[200px] md:w-[400px] md:h-[400px] rounded-full object-cover">
 
-        </div>
       </div>
     </div>
   </section>
 
-  <div class="flex justify-evenly items-center flex-wrap mx-6 sm:mx-14 sm:mt-14 ">
-    <div class="card card-compact w-96 bg-base-100 shadow-xl mt-6">
-      <figure><img src="../assets/Images/anguylar y react.png" alt="Shoes" /></figure>
-      <div class="card-body">
-        <h2 class="card-title justify-center">Frontend</h2>
-        <p>Apesar de que el diseño no es mi punto fuerte, no me dejo llevar por el miedo a intentarlo cada vez que
-          puedo, sigo cada dia aprendiendo mas sobre el diseño y la experiencia de usuario para mejorar el diseño de
-          nuevas interfaces.Tengo manejo intermedio de Html5 y Css3 ,tambien de javascript manejando bibliotecas como
-          react.Actualmente estoy explorando angular</p>
+
+  <!-- <div class="flex justify-evenly items-center flex-wrap mx-6 sm:mx-14 sm:mt-14 ">
+    <div class="relative flex justify-center items-center h-screen bg-black">
+      <div class="relative w-96 bg-black text-white rounded-lg shadow-xl mt-6 p-4">
+        <figure class="flex justify-center">
+          <img src="../assets/Images/anguylar y react.png" alt="Frontend" class="rounded-t-lg" />
+        </figure>
+        <div class="card-body">
+          <h2 class="text-center text-2xl font-bold mt-4">Frontend</h2>
+          <p class="text-center mt-4">
+            A pesar de que el diseño no es mi punto fuerte, no me dejo llevar por el miedo a intentarlo cada vez que puedo,
+            sigo cada día aprendiendo más sobre el diseño y la experiencia de usuario para mejorar el diseño de nuevas
+            interfaces. Tengo manejo intermedio de HTML5 y CSS3, también de JavaScript manejando bibliotecas como React.
+            Actualmente estoy explorando Angular.
+          </p>
+        </div>
+        <div class="absolute inset-0 rounded-lg pointer-events-none border-4 border-transparent neon-border"></div>
       </div>
     </div>
-    <div class="card card-compact w-96 bg-base-100 shadow-xl  mt-6 ">
-      <figure><img src="../assets/Images/springboot-1.webp" alt="Shoes" /></figure>
+    <div class="relative flex justify-center items-center h-screen bg-black">
+      <div class="relative w-96 bg-black text-white rounded-lg shadow-xl mt-6 p-4">
+        <figure class="flex justify-center">
+          <figure><img src="../assets/Images/springboot-1.webp" alt="Shoes" /></figure>
+        </figure>
+        <div class="card-body">
+          <h2 class="text-center text-2xl font-bold mt-4">Backend</h2>
+          <p>Como desarrollador junior de backend, me encanta tener la oportunidad de aprender y crecer en este campo. soy
+            consciente de la importancia del backend como el motor detrás de las aplicaciones y por ello estoy
+            comprometido a adquirir nuevas habilidades y conocimientos para contribuir de manera significativa a los
+            proyectos en los que hago parte.La mayor parte de mi conocimiento la tengo con java y springboot, sin embargo
+            tambien he manejado node.js,c# y actualmente estoy aprendiendo laravel.</p>
+        </div>
+        <div class="absolute inset-0 rounded-lg pointer-events-none border-4 border-transparent neon-border"></div>
+      </div>
+    </div>
+    <div class="relative flex justify-center items-center h-screen bg-black">
+      <div class="relative w-96 bg-black text-white rounded-lg shadow-xl mt-6 p-4">
+        <figure><img src="../assets/Images/postgres-logo.png" alt="Shoes" /></figure>
+
+        <div class="card-body">
+          <h2 class="text-center text-2xl font-bold mt-4">Db</h2>
+          <p>Me llama mucho la atencion la estructura de los datos y el flujo que tienen los datos en una aplicacion, me
+            apasiona encontrar algo nuevo que aprender sobre bases de datos.He trabajado con sistemas gestores de bases de
+            datos relacionales como Postgres,Mysql workbench o Sqlserver</p>
+        </div>
+        <div class="absolute inset-0 rounded-lg pointer-events-none border-4 border-transparent neon-border"></div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="flex justify-evenly items-center flex-wrap mx-6 sm:mx-14 ">
+    <div class="relative w-96 bg-black text-white rounded-lg shadow-xl mt-6 p-4">
+      <figure class="flex justify-center">
+        <img src="../assets/Images/anguylar_y_react.png" alt="Frontend" width="300" height="300" />
+      </figure>
       <div class="card-body">
-        <h2 class="card-title justify-center">Backend</h2>
+        <h2 class="text-center text-2xl font-bold ">Frontend</h2>
+        <p class="text-center mt-4">
+          A pesar de que el diseño no es mi punto fuerte, no me dejo llevar por el miedo a intentarlo cada vez que
+          puedo,
+          sigo cada día aprendiendo más sobre el diseño y la experiencia de usuario para mejorar el diseño de nuevas
+          interfaces. Tengo manejo intermedio de HTML5 y CSS3, también de JavaScript manejando bibliotecas como React.
+          Actualmente estoy explorando Angular.
+        </p>
+      </div>
+      <div class="absolute inset-0 rounded-lg pointer-events-none border-4 border-transparent neon-border"></div>
+    </div>
+
+    <div class="flex flex-col relative w-96 bg-black text-white rounded-lg shadow-xl mt-6 p-4 items-center justify-center ">
+        <img src="../assets/Images/springboot.png" alt="Shoes" height="150" width="150"/>
+      <div class="card-body">
+        <h2 class="text-center text-2xl font-bold">Backend</h2>
         <p>Como desarrollador junior de backend, me encanta tener la oportunidad de aprender y crecer en este campo. soy
           consciente de la importancia del backend como el motor detrás de las aplicaciones y por ello estoy
           comprometido a adquirir nuevas habilidades y conocimientos para contribuir de manera significativa a los
           proyectos en los que hago parte.La mayor parte de mi conocimiento la tengo con java y springboot, sin embargo
           tambien he manejado node.js,c# y actualmente estoy aprendiendo laravel.</p>
       </div>
+      <div class="absolute inset-0 rounded-lg pointer-events-none border-4 border-transparent neon-border"></div>
     </div>
 
-    <div class="card card-compact w-96 bg-base-100 shadow-xl m mt-6 ">
-      <figure><img src="../assets/Images/postgres-logo.png" alt="Shoes" /></figure>
+    <div class="flex flex-col relative w-96 bg-black text-white rounded-lg shadow-xl mt-6 p-4 items-center justify-center">
+      <figure><img src="../assets/Images/postgres.png" alt="Shoes" height="150" width="150"/></figure>
       <div class="card-body">
-        <h2 class="card-title justify-center ">DB</h2>
+        <h2 class="text-center text-2xl font-bold ">DB</h2>
         <p>Me llama mucho la atencion la estructura de los datos y el flujo que tienen los datos en una aplicacion, me
           apasiona encontrar algo nuevo que aprender sobre bases de datos.He trabajado con sistemas gestores de bases de
           datos relacionales como Postgres,Mysql workbench o Sqlserver</p>
       </div>
+      <div class="absolute inset-0 rounded-lg pointer-events-none border-4 border-transparent neon-border"></div>
     </div>
+
   </div>
   <footer class="footer p-10 bg-black text-neutral-content flex justify-between">
     <aside>
