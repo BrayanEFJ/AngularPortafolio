@@ -8,10 +8,9 @@ import { LucideCustomModule } from './lucide-custom.module';
   standalone: true,
   imports: [
     RouterOutlet,
-    LucideCustomModule
+    LucideCustomModule,
   ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'angularpagedev';
