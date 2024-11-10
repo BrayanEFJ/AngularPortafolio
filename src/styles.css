@@ -3,5 +3,49 @@
 @tailwind components;
 @tailwind utilities;
 
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%);
+}
 
+@media (min-width: 768px) {
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-532px * 4)); /* 6 tarjetas visibles */
+        }
+    }
+
+    .carousel-track {
+        animation: scroll 20s linear infinite;
+        display: flex;
+        width: calc(500px * 8);
+    }
+}
+
+
+@media (max-width: 767px) {
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-482px * 4)); /* 4 tarjetas visibles */
+        }
+    }
+
+    .carousel-track {
+        animation: scroll 20s linear infinite;
+        display: flex;
+        width: calc(450px * 8);
+    }
+}
+
+
+
+
+  
 
