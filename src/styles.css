@@ -38,36 +38,10 @@
     }
 
     .carousel-track {
-        animation: scroll 20s linear infinite;
+        animation: scroll 50s linear infinite;
         display: flex;
         width: calc(450px * 8);
     }
-}
-
-@keyframes slide_to_top {
-    0% {
-        transform: translatey(0);
-    }
-    100% {
-        transform: translatey(-100%);
-    }
-}
-
-@keyframes slide_to_down {
-    0% {
-        transform: translatey(0);
-    }
-    100% {
-        transform: translatey(100%);
-    }
-}
-
-.animate-slide-to-left {
-    animation: slide_to_top 50s linear infinite;
-}
-
-.animate-slide-to-right {
-    animation: slide_to_down 50s linear infinite;
 }
 
 
