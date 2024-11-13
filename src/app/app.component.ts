@@ -5,8 +5,7 @@ import { LucideCustomModule } from './lucide-custom.module';
 import {HeroModule} from './HeroModule/hero.component';
 import {LanguagesModule} from './LanguagesModule/languages.component';
 import { AboutModule } from "./AboutModule/aboutme.component";
-
-
+import { ProyectsModule } from './ProyectsModule/proyects.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -15,7 +14,8 @@ import { AboutModule } from "./AboutModule/aboutme.component";
     LucideCustomModule,
     LanguagesModule,
     HeroModule,
-    AboutModule
+    AboutModule,
+    ProyectsModule
 ],
   templateUrl: './app.component.html',
 })
